@@ -1,0 +1,9 @@
+.header-title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bold;
+    font-size: 32px;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px #000000;
+  }

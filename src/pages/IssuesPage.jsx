@@ -33,11 +33,12 @@ const IssuesPage = () => {
     return dataFromApi.slice(startIndex, endIndex).map((issue, index) => (
       <tr key={issue.number}>
         <td>{issue.number}</td>
+        <td>{issue.user.login}</td>
+
         <td>{issue.title}</td>
         <td>{issue.body ? issue.body : "Data Not Available"}</td>
-        <td>{issue.user.login}</td>
         <td>
-          <img src={issue.user.avatar_url} alt={issue.user.login} width="50" height="50" />
+          <img src={issue.user.avatar_url} alt={issue.user.login} width="70" height="70" />
         </td>
         <td><Link to={issue.html_url} style={{textDecoration:"none"}} target="_blank">Click Here</Link></td>
 
@@ -66,9 +67,9 @@ const IssuesPage = () => {
           <thead>
             <tr>
               <th>No</th>
-              <th>Title</th>
-              <th>Body</th>
-              <th>Login</th>
+              <th>Name</th>
+              <th>Issue Message</th>
+              <th>Issue Fixed Message</th>
               <th>Image</th>
               <th>Link</th>
             </tr>
