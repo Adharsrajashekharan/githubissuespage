@@ -12,7 +12,6 @@ function Header() {
         <Navbar.Toggle />
         <Navbar.Collapse className="justify-content-end">
           <Navbar.Text>
-            {/* created by <a href="#login">Adhars rajashekharan</a> */}
           </Navbar.Text>
         </Navbar.Collapse>
       </Container>
